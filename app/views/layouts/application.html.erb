@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sweatbook</title>
+  <title>Treebook1</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
-</body>
-</html>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner"><div class="pull-left"><img width="75" height="75" src="http://www.goodwp.com/images/201104/goodwp.com_17496.jpg" width="590" height="393"></div>
+			<div class="container">
+				<a class="brand" href="#"> Treebook1</a>
+				<ul class="nav">
+					<li><%= link_to "All Statuses", statuses_path %></li>
+					
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<p class="notice"><%= notice %></p>
+	        <p class="alert"><%= alert %></p>
+			<%= yield %>
+		</div>
+	</body>
+	</html>
